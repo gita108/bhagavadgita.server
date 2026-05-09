@@ -1,0 +1,41 @@
+# --- Dependencies ---
+node_modules/
+
+# --- Logs & runtime ---
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+nohup.out
+*.pid
+
+# --- Environment & secrets ---
+.env
+.env.*
+!.env.example
+
+# Cloudflare Tunnel credential files (UUID.json from `cloudflared tunnel login`)
+cloudflare/etc/cloudflared/*.json
+
+# --- OS ---
+.DS_Store
+.AppleDouble
+.LSOverride
+Thumbs.db
+
+# --- Editors ---
+.idea/
+*.swp
+*.swo
+*~
+
+# --- Optional local overrides ---
+*.local
+*.local.yml
+*.local.yaml
+
+# --- Archives / downloads (regenerate or fetch on deploy) ---
+cloudflare/dist/*.deb
+cloudflare/dist/*.rpm

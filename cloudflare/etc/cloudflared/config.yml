@@ -5,7 +5,7 @@ loglevel: debug
 logfile: /var/log/cloudflared.log
 #region: us
 ingress:
-  - hostname: "hello-app.mbharata.com"
+  - hostname: "hello-app.bhagavadgita.com"
     service: hello_world
   - service: http://localhost:80
 
